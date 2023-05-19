@@ -13,61 +13,69 @@
   </head>
   <body class="bg-slate-200">
     <!-- Section Login Start-->
-    <section class="h-full w-full pb-28 pt-12">
+    <section class="h-full w-full pb-10 pt-12">
       <div class="container">
         <div class="flex w-full justify-center">
           <div class="h-full w-[400px] rounded-lg bg-dark p-5">
             <div class="mt-6 w-full px-5">
               <h4
-                class="mb-10 text-center text-lg font-bold uppercase text-primary"
+                class="mb-5 text-center text-lg font-bold uppercase text-primary"
               >
-                E - Arsip Login Akun
+                E-Arsip <br> Login akun
               </h4>
-              <div class="mb-4 flex justify-center px-10 text-third">
-                <svg
+              <div class="mb-2 flex justify-center px-5 text-primary">
+                <!-- <svg
                   class="fill fill-current"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="150px"
+                  width="100px"
                   viewBox="0 0 512 512"
                 >
                   <title>Admin Login</title>
                   <path
                     d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48Zm69.3,96.17a72.5,72.5,0,1,1-72.6,72.5A72.55,72.55,0,0,1,325.3,144.17ZM170.2,170.53a59.32,59.32,0,1,1-59.4,59.32A59.35,59.35,0,0,1,170.2,170.53Zm-75.85,155c24.5-13.29,55.87-19.94,75.85-19.94,15,0,34.32,3,53.33,10.2a133.05,133.05,0,0,0-34,27.11c-13.19,15-20.76,32.92-20.76,50.83v15A177.06,177.06,0,0,1,94.35,325.58ZM256,432a175.12,175.12,0,0,1-59.4-10.33V394.62c0-52.59,85.75-79.09,128.7-79.09,23,0,58.38,7.63,86.21,22.81A176.14,176.14,0,0,1,256,432Z"
                   />
-                </svg>
+                </svg> -->
               </div>
-              <div class="py-4">
-                <label for="Username" class="text-base text-slate-200"
-                  >Email / Username</label
+              <div class="py-5">
+                <label for="Username" class="text-sm text-third"
+                  >EMAIL / USERNAME</label
                 >
                 <br />
                 <input
                   type="username"
                   id="Username"
-                  placeholder="Masukan Username"
-                  class="mt-3 w-full rounded-lg bg-transparent bg-white px-4 py-2 text-base font-bold opacity-80 placeholder:font-normal placeholder:italic focus:outline-none"
+                  placeholder="Email / Username"
+                  class="mt-2 w-full rounded-lg bg-transparent bg-white px-4 py-2 text-sm opacity-80 focus:outline-none"
                 />
               </div>
-              <div class="pb-10">
-                <label for="Username" class="text-base text-slate-200"
-                  >Password</label
+              <div class="mb-6">
+                <label for="Username" class="text-sm text-third"
+                  >PASSWORD</label
                 >
                 <br />
                 <input
                   type="password"
                   id="Password"
-                  placeholder="Masukan Password"
-                  class="mt-3 w-full rounded-lg bg-transparent bg-white px-4 py-2 text-base font-bold opacity-80 placeholder:font-normal placeholder:italic focus:outline-none invalid:focus:border-red-600"
+                  placeholder="Password"
+                  class="mt-2 w-full rounded-lg bg-transparent bg-white px-4 py-2 text-sm opacity-80 focus:outline-none invalid:focus:border-red-600"
                   @visibility.window="$el.type = ($el.type == 'password') ? 'text' : 'password'"
                 />
               </div>
-              <div class="flex justify-center">
+              <div class="mt-2">
                 <a
                   href="#"
                   type="input"
                   id="login"
-                  class="mb-8 rounded-full bg-primary px-24 py-4 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
-                  >Login</a
+                  class="mb-2 rounded-lg bg-primary w-full flex items-center justify-center py-2 text-base text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                  >Log In</a
+                >
+                <p class="text-xs py-5 text-third text-center">- No Account, Try to -</p>
+                <a
+                  href="#"
+                  type="input"
+                  id="login"
+                  class="mb-8 rounded-lg bg-secondary w-full flex items-center justify-center py-2 text-base text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                  >Sign Up</a
                 >
               </div>
             </div>
